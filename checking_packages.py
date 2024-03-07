@@ -56,3 +56,29 @@ plt.title('Histogram of Total Sales')
 plt.xlabel('Total Sales')
 plt.ylabel('Frequency')
 plt.show()
+
+
+from scipy import stats
+
+# Sample data
+data = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+# Mean
+mean = np.mean(data)
+print("Mean:", mean)
+
+# Median
+median = np.median(data)
+print("Median:", median)
+
+# Mode
+mode = stats.mode(data)
+print("Mode:", mode.mode[0])
+
+# Standard deviation
+std_dev = np.std(data)
+print("Standard Deviation:", std_dev)
+
+# Variance
+variance = np.var(data)
+print("Variance:", variance
